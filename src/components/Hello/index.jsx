@@ -1,8 +1,9 @@
 import React from "react";
+import style from "./Hello.module.scss"
 
 const Hello = props => {
     const {name, surname} = props
-    return <div>Hello, {name} {surname}</div>
+    return <div className={style.wrapper_hello}>Hello, {name} {surname}</div>
 }
 
 export default Hello;

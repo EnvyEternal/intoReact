@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import style from '../Counter/Counter.module.scss'
 
 export class Counter extends Component {
     constructor(props){
@@ -10,12 +11,12 @@ export class Counter extends Component {
     incAdd = () => {
         const {value} = this.state;
         this.setState({value: value+1});
-        console.log('1')
+        
     }
     incDel = () => {
         const {value} = this.state;
         this.setState({value: value-1});
-        console.log('2')
+        
     }
     render() {
         const {value} = this.state;
